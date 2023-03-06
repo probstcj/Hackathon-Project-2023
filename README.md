@@ -6,7 +6,25 @@ Use the `git pull` or `git pull https://github.com/probstcj/Hackathon` to pull t
 
 # File System
 
-All files will be in folders named accordingly once we know the project.
+- Audio Analyzer
+    - Contains files for audio analysis
+    - Uses .WAV files to analyze
+- GUI
+    - Contains files for the GUI
+    - Prompts for user phrase for recording
+    - Records audio of user for analysis later
+    - Prompts user for string input to then recreate audio
+- Phonemizer
+    - Contains file for the conversion from string to phonemes
+    - Will convert all English strings into phonemes (explained later)
+
+# Python Libraries Needed
+
+- [Scipy](https://scipy.org/)
+- [Numpy](https://numpy.org/)
+- [Matplotlib](https://matplotlib.org/)
+- [Pyaudio](https://pypi.org/project/PyAudio/)
+- [Phonemizer](https://github.com/bootphon/phonemizer)
 
 # To get GIT started
 

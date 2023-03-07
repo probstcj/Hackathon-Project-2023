@@ -26,6 +26,81 @@ Use the `git pull` or `git pull https://github.com/probstcj/Hackathon` to pull t
 - [Pyaudio](https://pypi.org/project/PyAudio/)
 - [Phonemizer](https://github.com/bootphon/phonemizer)
 
+# Audio Analyzer
+
+This project relies on the concept of audio analysis. In order to analyze the audio, we first need to be able to read where phonemes start and stop in an audio file. In order to do this, we have a pre-recorded audio files with all phonemes. This program takes the Fourier Transform of all the sounds in the word, which gives us an "audio profile" of the sound. Then, once we have that, we traverse through the given audio file until we find a match of the sound, and repeat that until the end of the file.
+
+# Phonemes
+
+Phonemes are the smallest unit of sound in a word that every English word consists of. These are the following:
+
+## Consonants
+
+- p
+- f
+- t
+- Ɵ
+- tʃ
+- s
+- ʃ
+- k
+- b
+- v
+- d
+- ð
+- dʒ
+- z
+- ʒ
+- g
+- h
+- m
+- n
+- ŋ
+- r
+- l
+- w
+- j
+
+## Dipthongs
+
+- ei
+- ai
+- ɒi
+- əu
+- au
+- iə
+- uə
+- eə
+
+## Vowels
+
+- i:
+- i
+- e
+- æ
+- a:
+- ɒ
+- ɔ:
+- u
+- u:
+- ə:
+- ə
+
+These are the fundamental sounds with their symbols for each sound in the English language.
+
+# Fast Fourier Transform
+
+The Fast Fourier Transform is an algorithm that involves taking a single wave and splitting it into its fundamental frequencies, and graphing them along the frequency axis with their respective amplitudes. A visual of this is given below:
+
+![GIF of Fourier Transform](https://upload.wikimedia.org/wikipedia/commons/5/50/Fourier_transform_time_and_frequency_domains.gif)
+
+This helps us because it can give us a simple audio profile of our waveform. With this, we can then see if the waveforms match within a threshold.
+
+The Fast Fourier Transform algorithm is given below:
+
+![Equation for A ](https://wikimedia.org/api/rest_v1/media/math/render/svg/393b5c5a5c668495629828600cde4611b0fa2f5a)
+
+
 # To get GIT started
 
 - First, download [Git for Windows](https://gitforwindows.org/)

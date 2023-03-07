@@ -110,7 +110,7 @@ frame = customtkinter.CTkFrame(master=root)
 frame.pack(pady=40, padx=120, fill="both", expand=True)
 
 
-label = customtkinter.CTkLabel(master=frame, text="Step 1: Record yourself saying this sentence", font=("Roboto", 24))
+label = customtkinter.CTkLabel(master=frame, text="Step 1: Record yourself saying this sentence:", font=("Roboto", 24))
 label.pack(pady=12, padx=10)
 textBox = customtkinter.CTkTextbox(master=frame)
 

@@ -98,7 +98,7 @@ This helps us because it can give us a simple audio profile of our waveform. Wit
 
 The Fast Fourier Transform algorithm is given below:
 
-![Equation for Algorithm](https://mathworld.wolfram.com/images/equations/FastFourierTransform/NumberedEquation1.svg)
+![Equation for Algorithm](https://www.cmlab.csie.ntu.edu.tw/cml/dsp/training/coding/transform/images/image43.gif)
 
 
 # To get GIT started
